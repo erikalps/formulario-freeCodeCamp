@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucky Shrub-form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -12,37 +13,40 @@
             <p id="description">satisfaction survey</p>
         </header>
         <form id="survery-form">
-            <div class="customer information"> <!--informacoes do cliente-->
-                <div>
-                    <label for="name" name ="name">Enter your name</label>
+             <!--informacoes do cliente-->
+                <div class="customerInformation">
+                    <label for="name" name ="name">Enter your name:</label>
                     <input type="text" id="name" placeholder="Enter your name" class="inpute-customer" required>
                 </div>
-                <div>
-                    <label for="email" name ="email">Enter your email</label>
+               
+                <div class="customerInformation">
+                    <label for="email" name ="email">Enter your email:</label>
                     <input type="email" id="email" placeholder="Enter your email" class="inpute-customer" required>
                 </div>
-                <div>
-                    <label for="number" name ="phone-number" >Enter your phone Number</label>
+                
+                <div class="customerInformation">
+                    <label for="number" name ="phone-number" >Enter your phone Number:</label>
                     <input type="tel"   id="number" placeholder="Enter your phone Number" class="inpute-customer" pattern="[+]{1}[0-9]{11,14}" >
+
                 </div>
 
-            </div>
 
-
-            <div id="dropdown"> <!--checkBox -->
+            <div class="checkBox"> <!--checkBox -->
                 <p> What attracted you most to our store? </p>
-                <label for="opcao1">opcao1</label>
-                <input type="checkbox" id="opcao1" value ="opcao1" name ="opcao1">
-                <label for="opcao2">opcao2</label>
-                <input type="checkbox" id="opcao2" value ="opcao2" name ="opcao2">
-                <label for="opcao3">opcao3</label>
                 <input type="checkbox" id="opcao3" value ="opcao3" name ="opcao3">
+                <label for="opcao3">Plants</label>
+                <input type="checkbox" id="opcao2" value ="opcao2" name ="opcao2">
+                <label for="opcao2">Desigh and Creation</label>
+                <input type="checkbox" id="opcao1" value ="opcao1" name ="opcao1">
+                <label for="opcao1">Maintenance and Landscaping</label>
+                
+               
 
             </div>
 
             <div> <!--Menu suspenso-->
                 <p>From 0 to 10 how much you would recommend our store</p>
-                <select id="dropdown" name="">
+                <select id="dropdown" name="dropdown">
                     <option value="">1</option> 
                     <option value="">2</option>
                     <option value="">3</option>
@@ -56,6 +60,22 @@
                 <p>Were you looking for something you didn't find? if yes what?</p>
                 <textarea name="" rows="5" cols="50"></textarea>
             </div>
+            <!--input radio-->
+            <div>
+               <P>ex</P>
+
+               <input type="radio" id="radio1" value="radio1">
+               <label for="radio1" name="radio1"ex1>ex1</label>
+               <input type="radio" id="radio1" value="radio2">
+               <label for="radio2" name="radio1"ex1>ex2</label>
+               <input type="radio" id="radio2" value="radio3">
+               <label for="radio1" name="radio2"ex1>ex3</label>
+            </div>
         </form>
+        <form action="myserver.com" method="post">
+            <p>Submit informations</p>
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </div>
 </body>
 </html>
