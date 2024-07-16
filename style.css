@@ -5,11 +5,17 @@
 body{
     background-color: #008B8B;
 }
+
+header img {
+    width: 50px;
+   
+    
+}
 .container{
     background-color: #F5F5DC;
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: 3%;
+    margin-top: 2%;
     border-radius: 1%;
     
 }
@@ -17,11 +23,19 @@ body{
 header{
     text-align: center;
     padding: 1em;
+    
 }
 
+header p{
+   
+    font-family: sans-serif;
+    letter-spacing: 1px;;
+    
+}
 p{
     font-size: 1rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1px;;
 
 }
 #survery-form{
@@ -30,7 +44,8 @@ p{
 }
 
 .customerInformation{
-    padding-bottom: 0.3em;
+    padding-bottom: 0.8em;
+  
     
 }
 
@@ -44,8 +59,33 @@ p{
  
 }
 
+.checkBox p{
+    margin-top: 30px;
+}
 .checkBox{
-  display: grid;
-  grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
   
 }
+
+#dropdown{
+   min-width: 50%;
+   border-color: #008B8B;
+}
+
+.radio{
+    display: flex;
+    flex-direction: column;
+}
+#Submit{
+   text-align: center;
+   font-weight:bolder;
+}
+#Submit input {
+    width: 250px;
+    height: 25px;
+    margin-bottom: 15px;
+}
+
