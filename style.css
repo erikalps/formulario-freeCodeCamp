@@ -3,7 +3,8 @@
 }
 
 body{
-    background-color: #008B8B;
+    background-color: #008B8B ;
+    background-image: url(img/Asset\ 2@3x.png);
 }
 
 header img {
@@ -17,7 +18,7 @@ header img {
     margin-right: 30%;
     margin-top: 2%;
     border-radius: 1%;
-    
+    border-color: aliceblue;
 }
 
 header{
@@ -38,7 +39,7 @@ p{
     letter-spacing: 1px;;
 
 }
-#survery-form{
+#survey-form{
     padding-left: 2em;
 
 }
