@@ -83,10 +83,27 @@ p{
 #Submit{
    text-align: center;
    font-weight:bolder;
+   padding-top: 20px;
 }
 #Submit input {
     width: 250px;
     height: 25px;
     margin-bottom: 15px;
+   
 }
 
+.container{
+    border: 2px solid black;
+    border-width: 0.1em;
+   
+
+}
+
+.Rate{
+ padding-left: 5px;
+ margin-top: 20px;
+ font-size: 1rem;
+ font-family:'Times New Roman', Times, serif;
+ letter-spacing: 1px;
+
+}
