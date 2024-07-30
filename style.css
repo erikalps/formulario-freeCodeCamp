@@ -14,9 +14,8 @@ header img {
 }
 .container{
     background-color: #F5F5DC;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 2%;
+    margin:auto;
+    max-width:30%;
     border-radius: 1%;
     border-color: aliceblue;
 }
@@ -105,5 +104,12 @@ p{
  font-size: 1rem;
  font-family:'Times New Roman', Times, serif;
  letter-spacing: 1px;
+}
 
+.container textarea{
+    width: calc(100% - 10px); 
+    height: 100px; 
+    height:100px;
+    box-sizing: border-box;
+    
 }
